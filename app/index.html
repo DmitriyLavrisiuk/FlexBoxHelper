@@ -1,32 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--saved from url=(0014)about:internet-->
-    <title>WebPack Template</title>
+    <title>FlexBox Helper</title>
     <link rel="stylesheet" href="../dist/css/main.css">
 </head>
+
 <body>
     <div class="wrapper">
-        <div class="container">
-            <div class="row h-100vh justify-content-center align-items-center">
-                <div class="col-lg-6 col-md-10 col-sm-12 col-12 jumbotron m-3 bg-light shadow-lg">
-                    <h1 class="display-4">Hello, world!</h1>
-                    <p class="lead">WebPack template elaborated specially for web-site development by <code>&lt;Dima_Lavrisiuk&gt;</code></p>
-                    <hr class="my-4">
-                    <a class="btn btn-sm btn-block btn-dark btn-lg" href="https://github.com/DmitriyLavrisiuk/" target="_blank" role="button">View <i class="fab fa-github"></i></a>
+        <header>
+            <h1>FlexboxHelper</h1>
+        </header>
+        <main>
+            <!-- EXMPLE 1-->
+            <section class="example-1">
+                <h2>display</h2>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        <mark>display: flex;</mark>
+    }
+                            </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-1">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
                 </div>
-                <div class="col-12 p-3 text-center display-4">
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-js-square"></i>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        <mark>display: inline-flex;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-2">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </section>
 
+            <!-- EXMPLE 2-->
+            <section class="example-2">
+                <h2>flex-direction</h2>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-direction: row;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-1">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-direction: row-reverse;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-2">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-direction: column;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-3">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-direction: column-reverse;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-4">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+            </section>
+
+            <!-- EXMPLE 3-->
+            <section class="example-3">
+                <h2>flex-wrap</h2>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-wrap: nowrap;</mark>
+        width: 250px;
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-1">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-wrap: wrap;</mark>
+        width: 250px;
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-2">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-wrap: wrap-reverse;</mark>
+        width: 250px;
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-3">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+            </section>
+
+            <!-- EXMPLE 4-->
+            <section class="example-4">
+                <h2>justify-content</h2>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: flex-start;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-1">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: center;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-2">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: flex-end;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-3">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: space-between;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-4">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: space-around;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-5">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+            </section>
+
+        </main>
+    </div>
     <script src="../dist/js/main.js"></script>
 </body>
+
 </html>

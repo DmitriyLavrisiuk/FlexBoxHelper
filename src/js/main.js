@@ -1,4 +1,4 @@
-import 'bootstrap';
+//import 'bootstrap';
 import showMsg from './helloWorld';
 
 $(document).ready(
