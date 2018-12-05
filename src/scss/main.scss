@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+// Full pack Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Required
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/mixins";
+
+// Optional
+// @import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/code";
+// @import "~bootstrap/scss/grid";
+
+// Custom style
+@import "./custom/styles";
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
