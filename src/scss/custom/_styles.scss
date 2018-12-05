@@ -11,12 +11,13 @@ body {
 .wrapper {
     max-width: 1100px;
     margin: auto;
-    padding: 0 20px;
 }
 
 header {
-    margin-bottom: 40px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 section {
@@ -30,8 +31,10 @@ section {
     h2 { margin: 0 0 40px 0; }
 
     article {
-        margin-top: 40px;
         &:nth-child(2) { margin-top: 0; }
+        margin-top: 40px;
+        pre { overflow: auto; }
+        h5 { color: rgb(200, 200, 200); }
     }
 }
 
@@ -46,9 +49,10 @@ section {
 .flex-element {
     margin: 5px;
     padding: 10px 15px;
-    background-color: rgba(236, 23, 79, .98);
+    background-color: rgba(236, 23, 80, 0.75);
     color: rgb(255, 255, 255);
     border-radius: 2px;
+    border: 1px solid rgb(236, 23, 79);
     font-weight: bold;
     font-size: 1em;
 }

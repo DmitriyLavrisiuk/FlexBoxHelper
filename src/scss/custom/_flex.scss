@@ -30,4 +30,22 @@
      .flex-container-3 { justify-content: flex-end; }
      .flex-container-4 { justify-content: space-around; }
      .flex-container-5 { justify-content: space-between; }
+     .flex-container-6 {
+          .flex-element:first-child { margin: auto; }
+          justify-content: space-between;
+     }
+     .flex-container-7 {
+          .flex-element:first-child { margin-right: auto; }
+          .flex-element:last-child { margin-left: auto; }
+          justify-content: space-between;
+     }
+}
+
+.example-5 {
+     .flex-container-1 {
+          justify-content: flex-start;
+          .flex-element-1 { order: 1; }
+          .flex-element-3 { order: -1; }
+          .flex-element-5 { order: 2; }
+     }
 }
