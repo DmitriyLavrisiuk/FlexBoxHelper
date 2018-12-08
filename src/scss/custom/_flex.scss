@@ -1,0 +1,78 @@
+.flex-container {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.example-1 {
+     .flex-container-1 { display: flex; }
+     .flex-container-2 { display: inline-flex; }
+}
+
+.example-2 {
+     .flex-container-1 { flex-direction: row; }
+     .flex-container-2 { flex-direction: row-reverse; }
+     .flex-container-3 { flex-direction: column; }
+     .flex-container-4 { flex-direction: column-reverse; }
+}
+
+.example-3 {
+     .flex-container-1 { flex-wrap: nowrap; }
+     .flex-container-2 { flex-wrap: wrap; }
+     .flex-container-3 { flex-wrap: wrap-reverse;}
+     .flex-container-1,
+     .flex-container-2,
+     .flex-container-3 { width: 250px; }
+}
+
+.example-4 {
+     .flex-container-1 { justify-content: flex-start; }
+     .flex-container-2 { justify-content: center; }
+     .flex-container-3 { justify-content: flex-end; }
+     .flex-container-4 { justify-content: space-around; }
+     .flex-container-5 { justify-content: space-between; }
+     .flex-container-6 {
+          .flex-element:first-child { margin: auto; }
+          justify-content: space-between;
+     }
+     .flex-container-7 {
+          .flex-element:first-child { margin-right: auto; }
+          .flex-element:last-child { margin-left: auto; }
+          justify-content: space-between;
+     }
+}
+
+.example-5 {
+     .flex-container-1 {
+          justify-content: flex-start;
+          .flex-element-1 { order: 1; }
+          .flex-element-3 { order: -1; }
+          .flex-element-5 { order: 2; }
+     }
+}
+
+.example-6 {
+     .flex-container { height: 100px; }
+     .flex-container-1 { align-items: stretch; }
+     .flex-container-2 { align-items: flex-start; }
+     .flex-container-3 { align-items: center; }
+     .flex-container-4 { align-items: flex-end; }
+     .flex-container-5 {
+          align-items: baseline;
+          .flex-element-2 { font-size: 1.3em; }
+          .flex-element-3 { font-size: 1.5em; }
+          .flex-element-4 { font-size: 1.4em; }
+          .flex-element-5 { font-size: 1.7em; }
+          .flex-element-6 { font-size: 1.6em; }
+          .flex-element-7 { font-size: 1.9em; }
+          .flex-element-8 { font-size: 1.8em; }
+     }
+}
+
+.example-7 {
+     .flex-container { height: 100px; }
+     .flex-container-1 .flex-element-1 { align-self: stretch; }
+     .flex-container-2 .flex-element-1 { align-self: flex-start; }
+     .flex-container-3 .flex-element-1 { align-self: center; }
+     .flex-container-4 .flex-element-1 { align-self: flex-end; }
+     .flex-container-5 .flex-element-1 { align-self: baseline; }
+}

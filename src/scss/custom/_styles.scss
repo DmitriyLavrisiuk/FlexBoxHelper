@@ -1,11 +1,64 @@
 @import "fonts";
+@import "flex";
 
-body, .row {
-    margin: 0 !important;
+body {
+    margin: 0 0 !important;
     padding: 0 !important;
-    font-family: Roboto, Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(75, 75, 75);
+    font-family: 'Nunito', sans-serif;
 }
 
-.h-100vh {
+.wrapper {
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+}
+
+section {
+    margin-bottom: 100px;
+    padding: 50px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 2px;
+    border: 1px solid rgb(200,200,200);
+    overflow: hidden;
+
+    h2 { margin: 0 0 40px 0; }
+
+    article {
+        &:nth-child(2) { margin-top: 0; }
+        margin-top: 40px;
+        pre { overflow: auto; }
+        h5 {
+            &:hover span {
+                color: rgb(100, 100, 100);
+                transition: 1s all;
+            }
+            color: rgb(200, 200, 200); 
+        }
+    }
+}
+
+.flex-container {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(236, 23, 79);
+    border-radius: 2px;
+    border: 1px solid rgb(222, 222, 222);
+}
+
+.flex-element {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: rgba(236, 23, 80, 0.75);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border: 1px solid rgb(236, 23, 79);
+    font-weight: bold;
+    font-size: 1em;
 }

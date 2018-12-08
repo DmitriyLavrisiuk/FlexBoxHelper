@@ -1,32 +1,670 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--saved from url=(0014)about:internet-->
-    <title>WebPack Template</title>
+    <title>FlexBox Helper</title>
     <link rel="stylesheet" href="../dist/css/main.css">
 </head>
+
 <body>
     <div class="wrapper">
-        <div class="container">
-            <div class="row h-100vh justify-content-center align-items-center">
-                <div class="col-lg-6 col-md-10 col-sm-12 col-12 jumbotron m-3 bg-light shadow-lg">
-                    <h1 class="display-4">Hello, world!</h1>
-                    <p class="lead">WebPack template elaborated specially for web-site development by <code>&lt;Dima_Lavrisiuk&gt;</code></p>
-                    <hr class="my-4">
-                    <a class="btn btn-sm btn-block btn-dark btn-lg" href="https://github.com/DmitriyLavrisiuk/" target="_blank" role="button">View <i class="fab fa-github"></i></a>
+        <header>
+            <h1>FlexboxHelper</h1>
+        </header>
+        <main>
+            <!-- EXMPLE 1 ------------------------------------------------------------------------>
+            <section class="example-1">
+                <h2>display</h2>
+                <article>
+                    <h5> Permissible values: <span>flex \ inline-flex</span></h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        <mark>display: flex;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-1">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
                 </div>
-                <div class="col-12 p-3 text-center display-4">
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-js-square"></i>
+                <article>
+                    <h5> Permissible values: <span>flex \ inline-flex</span></h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        <mark>display: inline-flex;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-2">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </section>
 
+            <!-- EXMPLE 2 ------------------------------------------------------------------------>
+            <section class="example-2">
+                <h2>flex-direction</h2>
+                <article>
+                    <h5> Permissible values:<span> row \ row-reverse \ column \column-reverse</span><br>Defalut value: row</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-direction: row;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-1">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> row \ row-reverse \ column \column-reverse</span><br>Defalut value: row</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-direction: row-reverse;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-2">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> row \ row-reverse \ column \column-reverse</span><br>Defalut value: row</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-direction: column;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-3">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> row \ row-reverse \ column \column-reverse</span><br>Defalut value: row</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-direction: column-reverse;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-4">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+            </section>
+
+            <!-- EXMPLE 3 ------------------------------------------------------------------------>
+            <section class="example-3">
+                <h2>flex-wrap</h2>
+                <article>
+                    <h5> Permissible values:<span> nowrap \ wrap \ wrap-reverse</span><br>Defalut value: nowrap</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-wrap: nowrap;</mark>
+        width: 250px;
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-1">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> nowrap \ wrap \ wrap-reverse</span><br>Defalut value: nowrap</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-wrap: wrap;</mark>
+        width: 250px;
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-2">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> nowrap \ wrap \ wrap-reverse</span><br>Defalut value: nowrap</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>flex-wrap: wrap-reverse;</mark>
+        width: 250px;
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-3">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+            </section>
+
+            <!-- EXMPLE 4 ------------------------------------------------------------------------>
+            <section class="example-4">
+                <h2>justify-content</h2>
+                <article>
+                    <h5> Permissible values:<span> flex-start \ center \ flex-end \ space-between \ space-around \ space-around</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: flex-start;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-1">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> flex-start \ center \ flex-end \ space-between \ space-around \ space-around</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: center;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-2">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> flex-start \ center \ flex-end \ space-between \ space-around \ space-around</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: flex-end;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-3">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> flex-start \ center \ flex-end \ space-between \ space-around \ space-around</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: space-between;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-4">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> flex-start \ center \ flex-end \ space-between \ space-around \ space-around</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: space-around;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-5">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> flex-start \ center \ flex-end \ space-between \ space-around \ space-around</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: space-around;</mark>
+        
+        .flex-element:first-child {
+            <mark>margin: auto;</mark>
+        }
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-6">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> flex-start \ center \ flex-end \ space-between \ space-around \ space-around</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>justify-content: space-around;</mark>
+        
+        .flex-element:first-child {
+            <mark>margin-right: auto;</mark>
+        }
+        
+        .flex-element:last-child {
+            <mark>margin-left: auto;</mark>
+        }
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-7">
+                    <div class="flex-element">1</div>
+                    <div class="flex-element">2</div>
+                    <div class="flex-element">3</div>
+                    <div class="flex-element">4</div>
+                    <div class="flex-element">5</div>
+                    <div class="flex-element">6</div>
+                    <div class="flex-element">7</div>
+                    <div class="flex-element">8</div>
+                </div>
+            </section>
+
+            <!-- EXMPLE 5 ------------------------------------------------------------------------>
+            <section class="example-5">
+                <h2>order</h2>
+                <article>
+                    <h5> Permissible values:<span> [-&#8734;; +&#8734;]</span><br>Defalut value: 0</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        
+        .flex-element-1 {
+            <mark>order: 1;</mark> // Первый элемент будет перемещен в конец
+
+        .flex-element-3 {
+            <mark>order: -1;</mark> // Третий элемент будет перемещен в самое начало, т.к по умолчанию у всех элементов свойство order: 0
+        }
+
+        .flex-element-5 {
+            <mark>order: 2;</mark> // Теперь пятый элемент будет в самом конце, т.к индекс его свойство order: 2 > свойство order: 1 у первого элемента 
+        }
+    }
+    // Данный пример можно сопаставить с координатной прямой X.
+    // Если число больше, то оно будет дальше по направление возрастания, в нашем случае это flex-direction: row
+    // то есть от -&#8734; к +&#8734;, соотсетственно элементы, у которых значение значение свойства order будет больше, те элементы будут стремится
+    // занять позицию правее относительно своих "братьев" на одном уровне, ближе к +&#8734;, аналогично и с наименьшим значение свойства order,
+    // элементы будут стремиться занять позицию левее, ближе к -&#8734;.
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-1">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+            </section>
+
+            <!-- EXMPLE 6 ------------------------------------------------------------------------>
+            <section class="example-6">
+                <h2>align-items</h2>
+                <article>
+                    <h5> Permissible values:<span> stretch \ flex-start \ flex-end \ flex-center \ baseline</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>align-items: stretch;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-1">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> stretch \ flex-start \ flex-end \ flex-center \ baseline</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>align-items: flex-start;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-2">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> stretch \ flex-start \ flex-end \ flex-center \ baseline</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>align-items: center;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-3">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> stretch \ flex-start \ flex-end \ flex-center \ baseline</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>align-items: flex-end;</mark>
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-4">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> stretch \ flex-start \ flex-end \ flex-center \ baseline</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        <mark>align-items: baseline;</mark>
+        .flex-element-2 { font-size: 1.3em; }
+        .flex-element-3 { font-size: 1.5em; }
+        .flex-element-4 { font-size: 1.4em; }
+        .flex-element-5 { font-size: 1.7em; }
+        .flex-element-6 { font-size: 1.6em; }
+        .flex-element-7 { font-size: 1.9em; }
+        .flex-element-8 { font-size: 1.8em; }
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-5">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+            </section>
+
+            <!-- EXMPLE 7 ------------------------------------------------------------------------>
+            <section class="example-7">
+                <h2>align-self</h2>
+                <article>
+                    <h5> Permissible values:<span> stretch \ flex-start \ flex-end \ flex-center \ baseline</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        .flex-element-1 {
+            <mark>align-self: stretch;</mark>
+        }
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-1">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> stretch \ flex-start \ flex-end \ flex-center \ baseline</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        .flex-element-1 {
+            <mark>align-self: flex-start;</mark> 
+        }
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-2">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> stretch \ flex-start \ flex-end \ flex-center \ baseline</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        .flex-element-1 {
+            <mark>align-self: center;</mark>
+        }
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-3">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> stretch \ flex-start \ flex-end \ flex-center \ baseline</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        .flex-element-1 {
+            <mark>align-self: flex-end;</mark>
+        }
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-4">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+                <article>
+                    <h5> Permissible values:<span> stretch \ flex-start \ flex-end \ flex-center \ baseline</span><br>Defalut value: flex-start</h5>
+                    <code>
+                        <pre>
+    .flex-container {
+        display: flex;
+        .flex-element-1 {
+            <mark>align-self: baseline;</mark>
+        }
+    }
+                        </pre>
+                    </code>
+                </article>
+                <div class="flex-container flex-container-5">
+                    <div class="flex-element flex-element-1">1</div>
+                    <div class="flex-element flex-element-2">2</div>
+                    <div class="flex-element flex-element-3">3</div>
+                    <div class="flex-element flex-element-4">4</div>
+                    <div class="flex-element flex-element-5">5</div>
+                    <div class="flex-element flex-element-6">6</div>
+                    <div class="flex-element flex-element-7">7</div>
+                    <div class="flex-element flex-element-8">8</div>
+                </div>
+            </section>
+        </main>
+    </div>
     <script src="../dist/js/main.js"></script>
 </body>
+
 </html>
