@@ -34,7 +34,13 @@ section {
         &:nth-child(2) { margin-top: 0; }
         margin-top: 40px;
         pre { overflow: auto; }
-        h5 { color: rgb(200, 200, 200); }
+        h5 {
+            &:hover span {
+                color: rgb(100, 100, 100);
+                transition: 1s all;
+            }
+            color: rgb(200, 200, 200); 
+        }
     }
 }
 

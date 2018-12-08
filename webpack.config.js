@@ -95,14 +95,14 @@ module.exports = {
     },
 
     plugins: [
-        /*new webpack.ProvidePlugin({
+        new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
             jquery: 'jquery',
             'window.jQuery': 'jquery',
             '$.jQuery': 'jquery',
             Popper: ['popper.js', 'default']
-        }),*/
+        }),
         new ExtractTextPlugin('./css/[name].css'),
         new CleanWebpackPlugin(['dist']),
         new CopyWebpackPlugin([{ from: './img', to: 'img' }], {ignore: [{ glob:'svg/*'  },]}),

@@ -49,3 +49,30 @@
           .flex-element-5 { order: 2; }
      }
 }
+
+.example-6 {
+     .flex-container { height: 100px; }
+     .flex-container-1 { align-items: stretch; }
+     .flex-container-2 { align-items: flex-start; }
+     .flex-container-3 { align-items: center; }
+     .flex-container-4 { align-items: flex-end; }
+     .flex-container-5 {
+          align-items: baseline;
+          .flex-element-2 { font-size: 1.3em; }
+          .flex-element-3 { font-size: 1.5em; }
+          .flex-element-4 { font-size: 1.4em; }
+          .flex-element-5 { font-size: 1.7em; }
+          .flex-element-6 { font-size: 1.6em; }
+          .flex-element-7 { font-size: 1.9em; }
+          .flex-element-8 { font-size: 1.8em; }
+     }
+}
+
+.example-7 {
+     .flex-container { height: 100px; }
+     .flex-container-1 .flex-element-1 { align-self: stretch; }
+     .flex-container-2 .flex-element-1 { align-self: flex-start; }
+     .flex-container-3 .flex-element-1 { align-self: center; }
+     .flex-container-4 .flex-element-1 { align-self: flex-end; }
+     .flex-container-5 .flex-element-1 { align-self: baseline; }
+}
